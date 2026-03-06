@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONIDO — Contacto</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">SON<span>I</span>DO</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="generos.html">Géneros</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <button class="nav-cta">Escuchar ahora</button>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-hero" style="padding-bottom:20px;">
+      <div class="tag fade-up fade-up-1">Escríbenos</div>
+      <h1 class="section-title fade-up fade-up-2">
+        Hablemos de<br><span class="colored">música</span>
+      </h1>
+      <p style="font-size:16px; color:var(--muted); margin-top:20px; max-width:520px; line-height:1.75;" class="fade-up fade-up-3">
+        ¿Tienes una pregunta, una propuesta o simplemente quieres saludar? Nos encantaría escucharte.
+      </p>
+    </div>
+
+    <!-- Layout contacto -->
+    <div class="contact-layout">
+
+      <div class="fade-up fade-up-2">
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Dirección</div>
+              <div class="ci-value">Calle 72 #10-34, Bogotá, Colombia</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value">hola@sonido.co</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Teléfono</div>
+              <div class="ci-value">+57 (601) 234-5678</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-label">Horario</div>
+              <div class="ci-value">Lun – Vie, 9:00 am – 6:00 pm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <div class="social-label">Redes sociales</div>
+          <div class="social-icons">
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">▶</a>
+            <a href="#" class="social-icon">📸</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact-form fade-up fade-up-3">
+        <div class="form-title">Envíanos un mensaje</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <select id="asunto">
+            <option value="" disabled selected>Selecciona un tema...</option>
+            <option>Soporte técnico</option>
+            <option>Propuesta de artista</option>
+            <option>Alianzas comerciales</option>
+            <option>Prensa y medios</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit(this)">Enviar mensaje →</button>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="tag fade-up fade-up-1">Preguntas frecuentes</div>
+      <h2 class="section-title fade-up fade-up-2" style="margin-bottom:0;">
+        <span class="stroke">¿Tienes</span> dudas?
+      </h2>
+      <div class="faq-grid fade-up fade-up-3">
+        <div class="faq-card">
+          <div class="faq-question">¿Es gratuito?</div>
+          <div class="faq-answer">Sí, tenemos un plan gratuito con acceso básico. También ofrecemos planes premium con calidad de audio superior y sin anuncios.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">¿Puedo subir mi música?</div>
+          <div class="faq-answer">¡Claro! Si eres artista independiente, puedes subir tu música directamente desde tu perfil. Escríbenos para más info.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">¿Funciona sin internet?</div>
+          <div class="faq-answer">Los usuarios premium pueden descargar canciones para escuchar sin conexión en nuestra app móvil.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">¿En qué dispositivos funciona?</div>
+          <div class="faq-answer">Disponible en web, iOS, Android y dispositivos de escritorio. Tu música te sigue a donde vayas.</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="foot-logo">SON<span>I</span>DO</div>
+    <p>© 2026 Sonido. Todos los derechos reservados.</p>
+    <ul class="foot-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="generos.html">Géneros</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function handleSubmit(btn) {
+      btn.textContent = '✓ Mensaje enviado';
+      btn.style.background = 'var(--blue)';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Enviar mensaje →';
+        btn.style.background = '';
+        btn.disabled = false;
+        document.getElementById('nombre').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('mensaje').value = '';
+        document.getElementById('asunto').selectedIndex = 0;
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
