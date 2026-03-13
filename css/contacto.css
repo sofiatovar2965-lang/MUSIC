@@ -6,7 +6,7 @@ box-sizing:border-box;
 
 body{
 font-family:Arial, sans-serif;
-background:#000000; /*fondo*/
+background:linear-gradient(90deg,#e6c9f1,#b3d2ff);
 color:rgb(255, 253, 253); /*letra conctacto*/
 }
 
@@ -14,8 +14,8 @@ color:rgb(255, 253, 253); /*letra conctacto*/
 /* NAVBAR */
 
 header{
-background:#dab8e7; /*barra color*/
-position:sticky;
+background:#836da0; /*barra color*/
+position:center;
 top:0;
 z-index:1000;
 }
@@ -93,7 +93,7 @@ gap:40px;
 }
 
 .contact-info{
-background:#cbabd8; /*fondo cuadro info*/
+background:#836da0; /*fondo cuadro info*/
 padding:30px;
 border-radius:10px;
 }
@@ -121,7 +121,7 @@ color:#030303;
 
 
 .contact-form{
-background:#cfb4da;/* segundo recuadro*/
+background:#836da0;/* segundo recuadro*/
 padding:30px;
 border-radius:10px;
 }
@@ -147,7 +147,7 @@ height:120px;
 }
 
 .contact-form button{
-background:#ae50ca;/*color del boton*/
+background:#d1b1f5;/*color del boton*/
 border:none;
 padding:12px;
 border-radius:30px;
@@ -164,7 +164,7 @@ background:#d471ec;/*sombra del boton*/
 /* FOOTER */
 
 footer{
-background:#c9a2d8;/*barra de abajo*/
+background:#836da0;;/*barra de abajo*/
 padding:40px 5%;
 }
 
@@ -188,7 +188,7 @@ color:#000000;
 .footer-bottom{
 text-align:center;
 margin-top:30px;
-border-top:1px solid #b20dff;/*linea de abajo*/
+border-top:1px solid #a6d9fc;/*linea de abajo*/
 padding-top:15px;
 color:#ebebeb;/*letra final*/
 }
