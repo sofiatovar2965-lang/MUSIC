@@ -1,8 +1,125 @@
-/* ========================================
-   SONIDO — nosotros.css  (solo página Nosotros)
-   ======================================== */
+:root {
+  --bg-main:       #ffffff;
+  --bg-navbar:     #db2aaf;
+  --accent:        #e549c6;
+  --text-light:    #000000;
+  --text-muted:    #040404;
+  --input-bg:      #e549c6;
+  --input-border:  #080808;
+}
 
-/* ── INTRO ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+
+.navbar {
+  background-color: var(--bg-navbar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.navbar__icon {
+  font-size: 1.4rem;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover,
+.navbar__links a.active {
+  color: var(--accent);
+}
+
+.navbar__links .cart-icon {
+  font-size: 1.2rem;
+}
+
+
+.page-title {
+  text-align: center;
+  padding: 40px 0 30px;
+}
+
+.page-title h1 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 30px;
+  gap: 60px;
+}
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+
 .about-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11,11 +128,9 @@
   padding: 80px 0;
 }
 
-.about-visual { position: relative; }
 
 .about-box {
   aspect-ratio: 1;
-  background: var(--surface);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -28,7 +143,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 40%, rgba(0,180,255,0.12), transparent 60%);
+  background: radial-gradient(circle at 30% 40%, rgba(216, 62, 218, 0.12), transparent 60%);
 }
 
 .big-note {
@@ -44,14 +159,12 @@
 .about-badge {
   position: absolute;
   bottom: -20px; right: -20px;
-  background: var(--accent);
-  color: var(--bg);
   padding: 16px 20px;
   font-family: 'Syne', sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  
 }
 
 .about-text .tag { margin-bottom: 24px; }
@@ -79,7 +192,7 @@
 }
 
 .team-card {
-  background: var(--surface);
+  
   border: 1px solid var(--border);
   padding: 32px 24px;
   text-align: center;
@@ -87,7 +200,7 @@
 }
 
 .team-card:hover {
-  border-color: rgba(0,180,255,0.4);
+  border-color: rgba(153, 21, 94, 0.4);
   transform: translateY(-4px);
 }
 
@@ -104,7 +217,7 @@
   transition: border-color 0.2s;
 }
 
-.team-card:hover .avatar { border-color: var(--accent); }
+
 
 .team-name {
   font-family: 'Syne', sans-serif;
@@ -117,37 +230,12 @@
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accent);
+
   margin-bottom: 12px;
 }
 
-.team-bio { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.team-bio { font-size: 13px; color: var(); line-height: 1.6; }
 
-/* ── VALORES ── */
-.values-section { padding: 60px 0 80px; }
 
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 48px;
-}
 
-.value-card {
-  border: 1px solid var(--border);
-  padding: 36px 28px;
-  transition: border-color 0.2s;
-}
 
-.value-card:hover { border-color: rgba(0,180,255,0.35); }
-
-.value-icon { font-size: 32px; margin-bottom: 16px; }
-
-.value-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 19px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.value-text { font-size: 14px; color: var(--muted); line-height: 1.7; }
