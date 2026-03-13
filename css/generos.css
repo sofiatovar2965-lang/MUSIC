@@ -389,25 +389,26 @@ footer p {
   }
 }
 
-/* ── RESPONSIVE ── */
 
+/* ── RESPONSIVE DESIGN ── */
+
+/* Tablet */
 @media (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap;
-    gap: 12px;
+    padding: 12px 3%;
   }
 
   .nav-links {
-    gap: 16px;
+    gap: 20px;
   }
 
   .section-title {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .genres-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
   }
 
   .genre-highlight-grid {
@@ -417,6 +418,75 @@ footer p {
   }
 
   .genre-highlight-grid h2 {
+    font-size: 32px;
+  }
+
+  .artists-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foot-links {
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 3%;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .section-title {
     font-size: 30px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .genres-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .genre-card {
+    min-height: 160px;
+    padding: 20px 16px 16px;
+  }
+
+  .genre-highlight {
+    padding: 40px 0 60px;
+  }
+
+  .genre-highlight-grid {
+    padding: 20px;
+  }
+
+  .genre-highlight-grid h2 {
+    font-size: 28px;
+  }
+
+  .btn-primary {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+
+  .artist-mini {
+    padding: 12px 16px;
+  }
+
+  footer {
+    padding: 30px 3%;
+  }
+
+  .foot-links {
+    flex-direction: column;
+    gap: 12px;
   }
 }

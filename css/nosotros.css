@@ -7,8 +7,8 @@ font-family:Arial, Helvetica, sans-serif;
 
 
 body{
-background:linear-gradient(90deg,#e6c9f1,#b3d2ff);
-color:white;
+background:linear-gradient(90deg,#e6c9f1,#b3d2ff); /* fondo de toda la pag*/
+color:rgb(255, 255, 255);/* letra */
 }
 
 
@@ -218,5 +218,160 @@ text-align:center;
 margin-top:40px;
 color:#ffffff;
 }
+
+/* ...existing code... */
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 2%;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-nosotros {
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .historia {
+        padding: 60px 5%;
+    }
+
+    .historia h2 {
+        font-size: 30px;
+    }
+
+    .historia p {
+        font-size: 16px;
+    }
+
+    .mision-vision {
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .equipo {
+        padding: 60px 5%;
+    }
+
+    .equipo h2 {
+        font-size: 30px;
+    }
+
+    .team-container {
+        gap: 20px;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 2%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero-nosotros {
+        height: 200px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .historia {
+        padding: 40px 5%;
+    }
+
+    .historia h2 {
+        font-size: 24px;
+    }
+
+    .historia p {
+        font-size: 14px;
+    }
+
+    .mision-vision {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .equipo {
+        padding: 40px 5%;
+    }
+
+    .equipo h2 {
+        font-size: 24px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .copy {
+        margin-top: 20px;
+    }
+}
+
 
 
