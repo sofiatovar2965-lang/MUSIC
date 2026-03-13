@@ -3,129 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibe Music</title>
-  <link rel="stylesheet" href="./css/base.css">
+
+  <!-- Hoja de estilos propia de la página -->
   <link rel="stylesheet" href="./css/home.css">
+
+  <!-- Librería de íconos Font Awesome (íconos de play, música, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>🎶MUSSIC</title>
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="home.html" class="nav-logo">MU<span>SS</span>IC</a>
-    <ul class="nav-links">
-      <li><a href="home.html" class="active">Home</a></li>
-      <li><a href="generos.html">Géneros</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    <button class="nav-cta">Iniciar sesion</button>
-  </nav>
+  <!-- ==========================================
+       HEADER / BARRA DE NAVEGACIÓN
+       Contiene el logo y los enlaces del menú.
+       Es sticky: se queda fija al hacer scroll.
+  ========================================== -->
+  <header>
+    <nav class="navbar">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
-    <div class="container">
+      <!-- Logo de la app -->
+      <a href="#" class="nav-logo">🎶<span>MUSSIC</span></a>
+
+      <!-- Enlaces de navegación principales -->
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="generos.html">Géneros</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctenos</a></li>
+      </ul>
+
+      <!-- Botón de acción (login) en la navbar -->
+      <button class="nav-cta">Iniciar sesión</button>
+
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       CONTENIDO PRINCIPAL
+  ========================================== -->
+  <main>
+
+    <!-- ==========================================
+         SECCIÓN HERO
+         Primera sección visible al entrar.
+         Contiene título, descripción, botones y
+         estadísticas de la plataforma.
+    ========================================== -->
+    <section class="hero">
       <div class="hero-content">
-        <div class="hero-eyebrow fade-up fade-up-1">El mejor ritmo para tu día</div>
+
+        <!-- Texto pequeño decorativo encima del título -->
+        <p class="hero-eyebrow fade-up fade-up-1">🎵 Tu música, tu mundo</p>
+
+        <!-- Título principal con efecto de texto en contorno -->
         <h1 class="hero-headline fade-up fade-up-2">
-          <div>SIENTE</div>
-          <div class="outline">LA</div>
-          <div class="blue">MÚSICA</div>
+          Escucha <span class="outline">Sin</span><br>
+          <span class="blue">Límites</span>
         </h1>
+
+        <!-- Descripción breve de la app -->
         <p class="hero-sub fade-up fade-up-3">
-          Millones de canciones, podcasts y géneros musicales. Descubre nuevos artistas y vive la experiencia sonora al máximo.
+          Millones de canciones, podcasts y playlists al alcance de tus oídos.<br>
+          Descubre artistas, géneros y nuevos sonidos cada día.
         </p>
+
+        <!-- Botones de llamada a la acción -->
         <div class="hero-actions fade-up fade-up-4">
-          <a href="generos.html" class="btn-primary">Explorar géneros</a>
-          <a href="nosotros.html" class="btn-outline">Conoce el equipo</a>
+          <a href="#" class="btn-primary"><i class="fa fa-play"></i> &nbsp;Escuchar gratis</a>
+          <a href="#" class="btn-outline">Explorar géneros</a>
         </div>
+
+        <!-- Estadísticas de la plataforma -->
         <div class="hero-stats fade-up fade-up-4">
-          <div><div class="stat-num">12M+</div><div class="stat-label">Canciones</div></div>
-          <div><div class="stat-num">340K</div><div class="stat-label">Artistas</div></div>
-          <div><div class="stat-num">80+</div><div class="stat-label">Géneros</div></div>
-          <div><div class="stat-num">4.9★</div><div class="stat-label">Valoración</div></div>
+          <div><div class="stat-num">50M+</div><div class="stat-label">Canciones</div></div>
+          <div><div class="stat-num">5M+</div><div class="stat-label">Artistas</div></div>
+          <div><div class="stat-num">120+</div><div class="stat-label">Países</div></div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FEATURED -->
-  <section class="featured-section">
-    <div class="container">
-      <div class="tag">En tendencia</div>
-      <h2 class="section-title">
-        <span class="stroke">Lo más</span><br><span>escuchado</span>
-      </h2>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN FEATURED (LO MÁS ESCUCHADO)
+         Grid con la canción destacada del día
+         y un ranking de los 4 tracks más populares.
+    ========================================== -->
+    <section class="featured-section">
+
+      <!-- Etiqueta decorativa de sección -->
+      <span class="tag">🔥 Tendencias</span>
+
+      <!-- Título de la sección con efecto de contorno en una palabra -->
+      <h2 class="section-title">Lo más <span class="stroke">Escuchado</span></h2>
+
+      <!-- Grid principal: 1 card grande a la izquierda + 4 cards pequeñas -->
       <div class="featured-grid">
-        <div class="feat-main fade-up fade-up-1">
+
+        <!-- Card grande: canción destacada con vinilo animado y mini reproductor -->
+        <div class="feat-main">
+
+          <!-- Vinilo animado (gira con CSS animation) -->
           <div class="vinyl-sm"></div>
-          <div class="feat-badge">🔥 #1 esta semana</div>
-          <div class="feat-title">Noche Eterna</div>
-          <div class="feat-sub">Luna Oscura · Álbum: Sombras · 3:24</div>
-          <div style="margin-top:28px;">
-            <a href="#" class="btn-primary" style="font-size:11px; padding:10px 24px;">▶ Reproducir</a>
-          </div>
-        </div>
-        <div class="feat-small fade-up fade-up-2">
-          <div class="num">02</div>
-          <div>
-            <div class="s-title">Ciudad de Neón</div>
-            <div class="s-artist">Synthwave CR</div>
-            <div class="s-dur" style="margin-top:8px;">3:47</div>
-          </div>
-        </div>
-        <div class="feat-small fade-up fade-up-3">
-          <div class="num">03</div>
-          <div>
-            <div class="s-title">Fuego y Hielo</div>
-            <div class="s-artist">El Ritmo</div>
-            <div class="s-dur" style="margin-top:8px;">4:01</div>
-          </div>
-        </div>
-        <div class="feat-small fade-up fade-up-2">
-          <div class="num">04</div>
-          <div>
-            <div class="s-title">Marea Alta</div>
-            <div class="s-artist">Los Olas</div>
-            <div class="s-dur" style="margin-top:8px;">5:12</div>
-          </div>
-        </div>
-        <div class="feat-small fade-up fade-up-3">
-          <div class="num">05</div>
-          <div>
-            <div class="s-title">Sueño Lúcido</div>
-            <div class="s-artist">Diva Kalma</div>
-            <div class="s-dur" style="margin-top:8px;">3:33</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta-banner">
-    <div class="container">
+          <!-- Badge indicando que es la canción del día -->
+          <span class="feat-badge">🎤 Canción del día</span>
+
+          <!-- Nombre y datos de la canción -->
+          <h3 class="feat-title">Blinding Lights</h3>
+          <p class="feat-sub">The Weeknd · After Hours · 2019</p>
+
+          <!-- Mini reproductor con barra de progreso y controles -->
+          <div class="mini-player">
+
+            <!-- Barra de progreso de la canción -->
+            <div class="player-bar">
+              <div class="player-progress"></div>
+            </div>
+
+            <!-- Botones: anterior, play y siguiente -->
+            <div class="player-controls">
+              <i class="fa fa-backward"></i>
+              <div class="play-btn"><i class="fa fa-play"></i></div>
+              <i class="fa fa-forward"></i>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Card pequeña: track #1 -->
+        <div class="feat-small">
+          <span class="num">01</span>
+          <div class="track-icon"><i class="fa fa-music"></i></div>
+          <div style="flex:1">
+            <div class="s-title">As It Was</div>
+            <div class="s-artist">Harry Styles</div>
+          </div>
+          <div class="s-dur">2:37</div>
+        </div>
+
+        <!-- Card pequeña: track #2 -->
+        <div class="feat-small">
+          <span class="num">02</span>
+          <div class="track-icon"><i class="fa fa-headphones"></i></div>
+          <div style="flex:1">
+            <div class="s-title">Flowers</div>
+            <div class="s-artist">Miley Cyrus</div>
+          </div>
+          <div class="s-dur">3:20</div>
+        </div>
+
+        <!-- Card pequeña: track #3 -->
+        <div class="feat-small">
+          <span class="num">03</span>
+          <div class="track-icon"><i class="fa fa-guitar"></i></div>
+          <div style="flex:1">
+            <div class="s-title">Cruel Summer</div>
+            <div class="s-artist">Taylor Swift</div>
+          </div>
+          <div class="s-dur">2:58</div>
+        </div>
+
+        <!-- Card pequeña: track #4 -->
+        <div class="feat-small">
+          <span class="num">04</span>
+          <div class="track-icon"><i class="fa fa-microphone"></i></div>
+          <div style="flex:1">
+            <div class="s-title">Unholy</div>
+            <div class="s-artist">Sam Smith ft. Kim Petras</div>
+          </div>
+          <div class="s-dur">2:37</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BANNER CTA (LLAMADA A LA ACCIÓN)
+         Sección para promocionar el plan Premium.
+    ========================================== -->
+    <div class="cta-banner">
       <div class="cta-inner">
+
+        <!-- Texto promocional del plan Premium -->
         <div>
-          <div class="tag">Sin costo</div>
-          <h3>Empieza a escuchar hoy</h3>
-          <p>Sin tarjeta de crédito. Sin compromiso.</p>
+          <span class="tag">⭐ Premium</span>
+          <h3>Sin anuncios. Sin interrupciones.</h3>
+          <p>Disfruta música ilimitada con calidad de audio superior.</p>
         </div>
-        <a href="contacto.html" class="btn-primary" style="font-size:13px; padding:16px 40px; white-space:nowrap; position:relative;">Contáctanos</a>
+
+        <!-- Botón para iniciar prueba gratuita -->
+        <a href="#" class="btn-primary" style="white-space:nowrap;">
+          <i class="fa fa-crown"></i> &nbsp;Probar Premium gratis
+        </a>
+
       </div>
     </div>
-  </section>
 
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       Pie de página con logo, descripción
+       y enlaces de navegación secundarios.
+  ========================================== -->
   <footer>
-    <div class="foot-logo">SON<span>I</span>DO</div>
-    <p>© 2026 Sonido. Todos los derechos reservados.</p>
+
+    <!-- Logo en el footer -->
+    <div class="foot-logo">🎶<span>MUSSIC</span></div>
+
+    <!-- Descripción corta de la plataforma -->
+    <p>Tu plataforma de música favorita · Escucha, descubre y comparte.</p>
+
+    <!-- Enlaces de navegación del footer -->
     <ul class="foot-links">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="generos.html">Géneros</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Géneros</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Contáctenos</a></li>
+      <li><a href="#">Privacidad</a></li>
     </ul>
+
   </footer>
 
 </body>
