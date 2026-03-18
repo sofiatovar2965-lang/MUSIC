@@ -87,7 +87,7 @@ body {
     linear-gradient(135deg, #4a3464, #325974);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   text-align: center;
   padding: 0 5%;
 }
@@ -245,13 +245,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Mini reproductor dentro de la card grande */
-.mini-player {
-  margin-top: 20px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 12px 14px;
-}
+
 
 /* Contenedor de la barra de progreso */
 .player-bar {
@@ -266,7 +260,7 @@ body {
 /* Progreso actual de la canción (45% reproducido) */
 .player-progress {
   height: 100%;
-  width: 45%;
+  width:75%;
   background: #b3d2ff;
   border-radius: 2px;
 }

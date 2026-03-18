@@ -149,17 +149,9 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
-.genre-arrow {
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  font-size: 18px;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
 
 .genre-icon {
-  font-size: 32px;
+  font-size: 62px;
   margin-bottom: 10px;
 }
 
@@ -285,8 +277,8 @@ body {
 }
 
 .btn-primary:hover {
-  background: #ffffff;
-  color: #5a4a72;
+  background: #5a4a72;
+  color: #ffffff;
 }
 
 /* ── ARTISTS MINI GRID ── */
@@ -304,9 +296,6 @@ body {
   transition: background 0.3s;
 }
 
-.artist-mini:hover {
-  background: rgba(255, 255, 255, 0.22);
-}
 
 .artist-mini .label {
   font-size: 11px;
